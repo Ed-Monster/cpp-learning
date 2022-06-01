@@ -1,9 +1,12 @@
-# Lesson2
+# Lesson2: Data Types
 - the limits and sizes of different data types (Linux)
 
-    | Type | Size(bytes) | Max |
+    | Type | Size(bits) | Max |
     | :-: | :-: | :- |
-    | short | 2 | 32767 |
-    | int | 4 | 2147483647 |
-    | long | 8 | 9223372036854775807 |
-    | long long | 8 | 9223372036854775807 |
+    | short | 16 | 32767 |
+    | int | 32 | 2147483647 |
+    | long | 64 | 9223372036854775807 |
+    | long long | 64 | 9223372036854775807 |
+
+- underlying types: \
+     wchar_t, char16_t, char32_t

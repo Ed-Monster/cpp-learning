@@ -12,9 +12,9 @@ int main(void){
     // cout << "long: " << sizeof(long long) * 8 << "bits, " << "max = " << LLONG_MAX << endl;
 
     // create a markdown sheet
-    cout << "| short | " << sizeof(short) << " | " <<  SHRT_MAX << " |" << endl;
-    cout << "| int | " << sizeof(int) << " | " <<  INT_MAX << " |" << endl;
-    cout << "| long | " << sizeof(long) << " | " <<  LONG_MAX << " |" << endl;
-    cout << "| long long | " << sizeof(long long) << " | " <<  LLONG_MAX << " |" << endl;
+    cout << "| short | " << 8 * sizeof(short) << " | " <<  SHRT_MAX << " |" << endl;
+    cout << "| int | " << 8 * sizeof(int) << " | " <<  INT_MAX << " |" << endl;
+    cout << "| long | " << 8 * sizeof(long) << " | " <<  LONG_MAX << " |" << endl;
+    cout << "| long long | " << 8 * sizeof(long long) << " | " <<  LLONG_MAX << " |" << endl;
     return 0;
 }
