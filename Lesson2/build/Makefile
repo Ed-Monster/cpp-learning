@@ -19,7 +19,7 @@ $(EXE) : $(OBJS)
 	$(CXX) -o $(EXE) $(OBJS)
 
 # generate objects
-$(OBJS) : $(SOURCE)
+$(OBJS) : %.o : %.cpp
 	$(CXX) -c -o $@ $< $(CPPFLAGS)
 
 # clean
