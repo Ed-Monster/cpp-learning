@@ -9,6 +9,6 @@
     extern double warming;
     ```
 - In C++, you can use scope-resolution operator `::` to explicitly use the external variable, which is arguably prefered to the traditional C-style **"define-and-re-declare"** pattern.
-```C++
-cout << ::warming;
-```
+  ```C++
+  cout << ::warming;
+  ```
