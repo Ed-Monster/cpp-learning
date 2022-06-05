@@ -3,7 +3,7 @@ CXX := g++
 CPPFLAGS := -Wall
 
 # the executable
-EXE := Rect2Polar
+EXE := ExternVar
 
 # source files
 SUBDIR := $(shell ls ../src -R | grep /)
