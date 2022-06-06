@@ -3,7 +3,7 @@ CXX := g++
 CPPFLAGS := -Wall
 
 # the executable
-EXE := ExternVar
+EXE := NameSpace
 
 # source files
 SUBDIR := $(shell ls ../src -R | grep /)

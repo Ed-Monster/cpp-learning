@@ -16,4 +16,22 @@
       using namespace debts;
       Debt golf;
       ```
-- another new feature: using the `array` container and iterator
+- new features: 
+  1. using the `array` container and iterator
+        ```C++
+        #include <array>
+        // a substitution of
+        // Debt dts[ARRAY_SIZE];
+        std::array<Debt, ARRAY_SIZE> dts;
+        ```
+  2. range-based `for` loop (a new feature of C++11)
+        ```C++
+        // to merely read elements
+        for(auto each_dt : dts){
+                showDebt(each_dt);
+            }
+        // to alter elements
+        for(auto &each_dt : dts){
+                getDebt(each_dt);
+            }
+        ```

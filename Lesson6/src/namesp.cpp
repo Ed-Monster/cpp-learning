@@ -7,9 +7,9 @@ namespace pers{
 
     void getPerson(Person &ps){
         cout << "Enter the first name: ";
-        cin << ps.fname;
+        cin >> ps.fname;
         cout << "Enter the last name: ";
-        cin << ps.lname;
+        cin >> ps.lname;
     }
 
     void showPerson(const Person &c_ps){
@@ -22,7 +22,7 @@ namespace debts{
     void getDebt(Debt &dt){
         getPerson(dt.name);
         std::cout << "Enter debt: ";
-        std::cin << dt.amount;
+        std::cin >> dt.amount;
     }
 
     void showDebt(const Debt &c_dt){
@@ -30,14 +30,6 @@ namespace debts{
         std::cout << ": $" << c_dt.amount << std::endl;
     }
 
-    double sumDebts(const Debt ar[], int n){
-        double sum = 0.0;
 
-        for(int i = 0; i < n; i++){
-            sum += ar[i].amount;
-        }
-
-        return sum;
-    }
 }
 // Last edited: 2022-06-05 21:10

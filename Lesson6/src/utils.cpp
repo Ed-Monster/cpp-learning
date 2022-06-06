@@ -1,7 +1,6 @@
 #include "utils.h"
 #include "namesp.h"
 #include <iostream>
-#include <array>
 
 void first(){
     // by using declarations
@@ -11,6 +10,7 @@ void first(){
     Debt golf = {{"Edward", "Akasaka"}, 11000.0};
     showDebt(golf);
 }
+
 
 void other(){
     using std::cout;
@@ -29,6 +29,24 @@ void other(){
     std::array<Debt, ARRAY_SIZE> dts;
 
     // Last edited: 2022-06-05 21:10
+    // input
+    for(auto &each_dt : dts){
+        getDebt(each_dt);
+    }
+
+    // output
+    for(auto each_dt : dts){
+        showDebt(each_dt);
+    }
+    // sum
+    cout << "Total debt: $" << sumDebts<ARRAY_SIZE>(dts) << endl;
+
+}
 
 
+void another(){
+    using pers::Person;
+    Person hitori = {"Abe", "Shinzo"};
+    pers::showPerson(hitori);
+    std::cout << std::endl;
 }
