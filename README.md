@@ -7,3 +7,4 @@
 - [Lesson4](Lesson4/README.md)
 - [Lesson5](Lesson5/README.md)
 - [Lesson6](Lesson6/README.md)
+- [Lesson7](Lesson7/README.md)
