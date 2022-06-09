@@ -1,8 +1,15 @@
 #include "mytime.h"
-#include <iostream>
 
 void Time::Show() const{
     std::cout << hours << " hours, " << minutes << " minutes.\n";
+}
+
+
+// the definiton of friend funtion
+std::ostream & operator<<(std::ostream &os, const Time &t){
+    os << t.hours << " hours, " << t.minutes << " minutes.\n";
+
+    return os;
 }
 
 

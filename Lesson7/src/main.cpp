@@ -1,4 +1,3 @@
-#include <iostream>
 #include "mytime.h"
 
 int main(){
@@ -17,26 +16,26 @@ int main(){
     Time diff;
     Time product;
 
-    cout << "planning time = ";
-    planning.Show();
+    cout << "planning time = " << planning;
+    // planning.Show();
 
-    cout << "waxing time = ";
-    waxing.Show();
+    cout << "waxing time = " << waxing;
+    // waxing.Show();
 
-    cout << "weeding time = ";
-    weeding.Show();
+    cout << "weeding time = " << weeding;
+    // weeding.Show();
 
     sum = waxing + weeding;
-    cout << "waxing + weeding = ";
-    sum.Show();
+    cout << "waxing + weeding = " << sum;
+    // sum.Show();
 
     diff = weeding - waxing;
-    cout << "weeding - waxing = ";
-    diff.Show();
+    cout << "weeding - waxing = " << diff;
+    // diff.Show();
 
     product = waxing * mult;
-    cout << "waxing * 2 = ";
-    product.Show();
+    cout << "waxing * 2 = " << product;
+    // product.Show();
 
     return 0;
 }
