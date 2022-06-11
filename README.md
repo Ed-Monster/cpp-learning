@@ -8,3 +8,4 @@
 - [Lesson5](Lesson5/README.md)
 - [Lesson6](Lesson6/README.md)
 - [Lesson7](Lesson7/README.md)
+- [Lesson8](Lesson8/README.md)
