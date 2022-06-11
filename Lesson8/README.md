@@ -1,43 +1,43 @@
 # Lesson8
 - the implementation of user-defined `class String`
 - features:
-  - initialization of a `String` object by:
-    - C-style string
+  1. initialization of a `String` object by:
+     1. C-style string
       ```C++
       String(const char *);
       ```
-    - an existing `String` object
+     2. an existing `String` object
       ```C++
       String(const String &);
       ```
-  - assignment to a `String` object by:
-    - C-style string
+  2. assignment to a `String` object by:
+     1. C-style string
       ```C++
       String & operator=(const char *);
       ```
-    - an existing `String` object
+     2. an existing `String` object
       ```C++
       String & operator=(const String &);
       ``` 
-  - access the elements of the string by index:
-    - to read and to modify
+  3. access the elements of the string by index:
+     1. to read and to modify
       ```C++
       char & operator[](int);
       ``` 
-    - only to read
+     2. only to read
       ```C++
       const char & operator[](int) const;
       ``` 
-  - use `cin` and `cout` to input and output `String` objects
-    - input
+  4. use `cin` and `cout` to input and output `String` objects
+     1. input
       ```C++
       friend istream & operator>>(istream &, String &);
       ```
-    - output
+     2. output
       ```C++
       friend ostream & operator<<(ostream &, const String &);
       ```
-  - to compare two `String` objects by `>`, `<`, and `==` operators
+  5. to compare two `String` objects by `>`, `<`, and `==` operators
     ```C++
     friend bool operator<(const String &, const String &);
     friend bool operator>(const String &, const String &);
